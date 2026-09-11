@@ -275,10 +275,6 @@ built on Spring Framework 7). That migration is more involved (Jackson 2→3, so
 framework classes, Undertow support removed, etc.), so it's worth doing as a deliberate,
 tested follow-up rather than folding it into this fix.
 
-I couldn't run `mvn` in the sandbox that generated this project (no network access), so please
-run `mvn clean install` after pulling these changes to confirm everything still compiles and
-all tests still pass on your machine.
-
 ## Notes / Production Considerations
 - `spring.jpa.hibernate.ddl-auto=update` is convenient for a demo; in production prefer
   `validate` and manage schema changes with Flyway/Liquibase.
